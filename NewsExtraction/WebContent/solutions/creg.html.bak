@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+ 
+  <TITLE> Company Registration </TITLE>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript">
+	  function hide1() {
+  for(i=1;i<11;i++)
+ document.getElementById('p'+i).style.display='none';
+  }
+   function validateForm(id1,name1,id2,name2,id3,name3,id4,name4,id5,name5,id6,name6,id7,name7,id8,name8,id9,name9,id10,name10)
+   {
+   var a=document.forms["myForm"][name1].value;
+  var b=document.forms["myForm"][name2].value;
+   var c=document.forms["myForm"][name3].value;
+  var d=document.forms["myForm"][name4].value;
+   var e=document.forms["myForm"][name5].value;
+  var f=document.forms["myForm"][name6].value;
+   var g=document.forms["myForm"][name7].value;
+  var h=document.forms["myForm"][name8].value;
+   var i=document.forms["myForm"][name9].value;
+  var j=document.forms["myForm"][name10].value;
+
+    document.getElementById(id1).style.display = 'none';
+	document.getElementById(id2).style.display = 'none';
+	  document.getElementById(id3).style.display = 'none';
+	document.getElementById(id4).style.display = 'none'; 
+	document.getElementById(id5).style.display = 'none';
+	document.getElementById(id6).style.display = 'none'; 
+	document.getElementById(id7).style.display = 'none';
+	document.getElementById(id8).style.display = 'none'; 
+	document.getElementById(id9).style.display = 'none';
+	document.getElementById(id10).style.display = 'none';
+   if (a==null || a=="")
+  {
+  var state = document.getElementById(id1).style.display;
+            if (state == 'block') {
+                document.getElementById(id1).style.display = 'none';
+            } else {
+                document.getElementById(id1).style.display = 'block';
+            }
+  }  
+  else  if(b==null || b=="")
+  {
+  var state = document.getElementById(id2).style.display;
+            if (state == 'block') {
+                document.getElementById(id2).style.display = 'none';
+            } else {
+                document.getElementById(id2).style.display = 'block';
+            }
+  }  
+ else if (a==null || a=="")
+  {
+  var state = document.getElementById(id1).style.display;
+            if (state == 'block') {
+                document.getElementById(id1).style.display = 'none';
+            } else {
+                document.getElementById(id1).style.display = 'block';
+            }
+  }  
+  else  if(b==null || b=="")
+  {
+  var state = document.getElementById(id2).style.display;
+            if (state == 'block') {
+                document.getElementById(id2).style.display = 'none';
+            } else {
+                document.getElementById(id2).style.display = 'block';
+            }
+  }  
+  else if (c==null || c=="")
+  {
+  var state = document.getElementById(id3).style.display;
+            if (state == 'block') {
+                document.getElementById(id3).style.display = 'none';
+            } else {
+                document.getElementById(id3).style.display = 'block';
+            }
+  }  
+  else  if(d==null || d=="")
+  {
+  var state = document.getElementById(id4).style.display;
+            if (state == 'block') {
+                document.getElementById(id4).style.display = 'none';
+            } else {
+                document.getElementById(id4).style.display = 'block';
+            }
+  } 
+  else if (e==null || e=="")
+  {
+  var state = document.getElementById(id5).style.display;
+            if (state == 'block') {
+                document.getElementById(id5).style.display = 'none';
+            } else {
+                document.getElementById(id5).style.display = 'block';
+            }
+  }  
+  else  if(f==null || f=="")
+  {
+  var state = document.getElementById(id6).style.display;
+            if (state == 'block') {
+                document.getElementById(id6).style.display = 'none';
+            } else {
+                document.getElementById(id6).style.display = 'block';
+            }
+  }
+  else if (g==null || g=="")
+  {
+  var state = document.getElementById(id7).style.display;
+            if (state == 'block') {
+                document.getElementById(id7).style.display = 'none';
+            } else {
+                document.getElementById(id7).style.display = 'block';
+            }
+  }  
+  else  if(h==null || h=="")
+  {
+  var state = document.getElementById(id8).style.display;
+            if (state == 'block') {
+                document.getElementById(id8).style.display = 'none';
+            } else {
+                document.getElementById(id8).style.display = 'block';
+            }
+  }  
+else  if (i==null || i=="")
+  {
+  var state = document.getElementById(id9).style.display;
+            if (state == 'block') {
+                document.getElementById(id9).style.display = 'none';
+            } else {
+                document.getElementById(id9).style.display = 'block';
+            }
+  }  
+  else  if(j==null || j=="")
+  {
+  var state = document.getElementById(id10).style.display;
+            if (state == 'block') {
+                document.getElementById(id10).style.display = 'none';
+            } else {
+                document.getElementById(id10).style.display = 'block';
+            }
+  }  
+  return false;
+   }
+   function overlay() {
+	el = document.getElementById("overlay");
+	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+el.style.background.opacity==0.1;
+}
+	</script>
+ </HEAD>
+
+ <BODY onload="hide1()">
+ <div id="logo">
+		<h1>Employee Expense Management</h1>
+	</div>
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a href="index.html" class="first">Home</a></li>
+				<li class="current_page_item"><a href="#">Services</a></li>
+				<li><a href="#">Clients</a></li>
+				<li><a href="#">About Us</a></li>
+                <li><a href="#" onclick='overlay()'>Login</a></li>
+				<li><a href="creg.html">Register</a></li>
+               <li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="overlay">
+     <div>
+       <FORM METHOD=POST ACTION="">
+		<TABLE>
+		<tr>
+		<td><p><B><I><FONT SIZE="7" COLOR="#6F6F6F">Login</font></I></B><p></td>
+		<td></td>
+		</tr>
+	<tr><td><BR></td><td></td></tr>
+		<TR>
+			<TD><FONT SIZE="5" COLOR="#6F6F6F">Username :</font></td>
+			<td><INPUT TYPE="text" NAME="" input style="height:30px;font-size:14pt;"></td>
+		</TR>
+<TR>
+<tr><td><BR></td><td></td></tr>
+	<TD><FONT SIZE="5" COLOR="#6F6F6F">Password :</font></td>
+		<td><INPUT TYPE="text"  NAME="" input style="height:30px;font-size:14pt;"></td>
+		</TR>
+		<tr><td><BR></td><td></td></tr>
+		<tr><td></td><td><INPUT TYPE="submit" value="Sign In"input style=" width:90px;height:50px;font-size:12pt;" ></td>
+		</tr>
+		</TABLE>
+       </FORM>
+	 </div>
+</div>
+ <FORM name="myForm" onsubmit="return validateForm('p1','date','p2','cname','p3','add','p4','city','p5','state','p6','zip','p7','phno','p8','adname','p9','ademail','p10','adpass')" 
+ METHOD=POST ACTION="">
+ <div id="cregcss">
+  <TABLE>
+  <TR class="trcol">
+	<TD>Date *</TD>
+	<TD><INPUT  id="date" class="tbox" TYPE="text" NAME="date"></TD>
+  </TR>
+  <TR>
+	<TD></TD>
+	<TD><p id="p1" class="p1">Please enter the date<p></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>Company Name *</TD>
+	<TD><INPUT class="tbox" TYPE="text" NAME="cname"></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD><p id="p2">Please enter the Company Name<p></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>Address *</TD>
+	<TD><TEXTAREA NAME="add" ROWS="" COLS=""></TEXTAREA></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD><p id="p3">Please enter the Company Address<p></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>City *</TD>
+	<TD><INPUT  class="tbox"TYPE="text" NAME="city"></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD><p id="p4">Please enter the City Name<p></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>State *</TD>
+	<TD><INPUT class="tbox" TYPE="text" NAME="state"></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD><p id="p5">Please enter the State Name<p></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>Zip Code *</TD>
+	<TD><INPUT class="tbox" TYPE="text" NAME="zip"></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD><p id="p6">Please enter the Zip Code<p></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>Phone No *</TD>
+	<TD><INPUT  class="tbox" TYPE="text" NAME="phno"></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD><p id="p7">Please enter the Phone Number<p></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>Fax:</TD>
+	<TD><INPUT class="tbox" TYPE="text" NAME="fax"></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>Email</TD>
+	<TD><INPUT  class="tbox" TYPE="text" NAME=""></D>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD></TD>
+  </TR><TR class="trcol">
+	<TD>Website</TD>
+	<TD><INPUT class="tbox" TYPE="text" NAME=""></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD></TD>
+  </TR>
+<TR class="trcol">
+	<TD>Admin Name*</TD>
+	<TD><INPUT class="tbox" TYPE="text" NAME="adname"></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD><p id="p8">Please enter the Admin Name<p></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>Admin e-mail *</TD>
+	<TD><INPUT  class="tbox" TYPE="text" NAME="ademail"></TD>
+  </TR>
+    <TR>
+	<TD><BR></TD>
+	<TD><p id="p9">Please enter the Admin Email Id<p></TD>
+  </TR>
+  <TR class="trcol">
+	<TD>Admin Password *</TD>
+	<TD><INPUT class="tbox" TYPE="password" NAME="adpass"></TD>
+  </TR>
+    <TR>
+	<TD><INPUT TYPE="submit"><BR></TD>
+	<TD><p id="p10">Please enter the Admin Password<p></TD>
+  </TR>
+  </TABLE>
+  </div>
+  </FORM>
+ </BODY>
+</HTML>

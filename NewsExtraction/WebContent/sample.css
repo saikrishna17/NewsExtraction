@@ -1,0 +1,16 @@
+#News-center
+{
+width: 650px; 
+border: 1px solid red; 
+float: left;
+margin-bottom:30px;
+margin-top:50px;
+}
+#image-center 
+{ 
+width: 300px; 
+border: 1px solid red;
+float: right;
+margin-bottom:30px;
+margin-top:50px;
+}

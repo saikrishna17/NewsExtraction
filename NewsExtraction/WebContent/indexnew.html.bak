@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>News Website</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="WOW Slider, Free CSS Gallery, CSS Gallery Code" />
+	<meta name="description" content="WOWSlider created with WOW Slider, a free wizard program that helps you easily generate beautiful web slideshow" />
+	<!-- Start Slider HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/sliderstyle.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End Slider HEAD section -->
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="sample.css" rel="stylesheet" type="text/css" media="screen" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="tabcontent.css" />
+<script type="text/javascript">
+        var imgs = [
+        'images/emp.jpg',
+        'images/icl.jpg',
+        'images/images.jpg'];
+        var cnt = imgs.length;
+
+        $(function() {
+            setInterval(Slider, 3000);
+        });
+
+        function Slider() {
+        $('#sliding').fadeOut("slow", function() {
+           $(this).attr('src', imgs[(imgs.length++) % cnt]).fadeIn("slow");
+        });
+        }
+
+		    function overlay() {
+        	el = document.getElementById("overlay");
+        	el.style.visibility = (el.style.visibility == "visible") ? "visible" : "visible";
+        }
+        function login(user,pass)
+        {
+        	 var a=document.forms["myForm"][user].value;
+        	  var b=document.forms["myForm"][pass].value;
+        	  if ((a==null || a=="") && (b==null || b==""))
+        	  {
+        	  alert("PLEASE FILL THE Username and password");
+        					 return false;					
+        }
+        	  return true;
+        }
+
+</script>
+</head>
+<body>
+<div id="container">
+  <div id="top_panel">
+    <div id="sitetitle"> NEWS Website </div>
+    <div id="searchbox">
+      <form action="http://www.free-css.com/" method="get">
+        <input name="search" type="radio" value="thissite" checked="checked" />
+        this site
+        <input type="radio" name="search" value="theweb" />
+        the web <br />
+        <input type="text" name="q" size="10" id="searchfield" title="searchfield" />
+        <input type="submit" name="Search" value="Search" alt="Search" id="searchbutton" title="Search" />
+      </form>
+    </div>
+    <div id="currentdate">
+      <script type="text/javascript">
+				<!--
+				var m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+				var d_names = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+				
+				var currentTime = new Date()
+				var day = currentTime.getDay()
+				var month = currentTime.getMonth() + 1
+				var date = currentTime.getDate()
+				var year = currentTime.getFullYear()
+				document.write( d_names[day] + ", " + date + " " + m_names[month] + " " + year + ", ")
+				var currentTime = new Date()
+				var hours = currentTime.getHours()
+				var minutes = currentTime.getMinutes()
+				if (minutes < 10){
+				minutes = "0" + minutes
+				}
+				document.write(hours + ":" + minutes + " ")
+				if(hours > 11){
+				document.write("PM")
+				} else {
+				document.write("AM")
+				}
+				//-->
+			</script>
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="http://www.free-css.com/" class="current">Home</a></li>
+      <li><a href="http://www.free-css.com/" class="current">Register</a></li>
+	  <li><a href="#" onclick='overlay()'>Login</a></li>
+	  <li><a href="http://www.free-css.com/">Daily News</a></li>
+      <li><a href="http://www.free-css.com/">Sports</a></li>
+      <li><a href="http://www.free-css.com/">Business</a></li>      
+      <li><a href="http://www.free-css.com/">Entertainment</a></li>  
+    </ul>
+</div>
+
+<div id="overlay">
+     <div>
+     <p><a href="indexnew.html">[close]</a></p>
+<!--       <form name="myForm" method="post" action="login2.jsp" onsubmit="return login('username','pswrd')">-->
+		<table>
+		<tr>
+		<td><p><b><i><font size="7" color="white">Login</font></i></b></p></td>
+		<td><IMG SRC="images/login.png" WIDTH="80" HEIGHT="80" BORDER="0" ALT=""></td>
+		</tr>
+	<tr><td><BR></td><td></td></tr>
+		<TR>
+			<TD><FONT SIZE="5" COLOR="white">Username :</font></td>
+			<td><INPUT TYPE="text" NAME="username" input style="height:30px;font-size:14pt;"></td>
+		</TR>
+<TR>
+<tr><td><BR></td><td></td></tr>
+	<TD><FONT SIZE="5" COLOR="white">Password :</font></td>
+		<td><INPUT TYPE="password"  NAME="pswrd" input style="height:30px;font-size:14pt;"></td>
+		</TR>
+		<tr><td><BR></td><td></td></tr>
+		<tr><td></td><td><INPUT TYPE="submit" value="Sign In"input style=" width:90px;height:50px;font-size:12pt;" ></td>
+		</tr>
+		</TABLE>
+       <!--</FORM>-->
+	 </div>
+</div>
+	
+
+<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="data1/images/4.jpg" alt="Highly Configurable Expense Report Software" title="Highly Configurable Expense Report Software" id="wows1_0"/></li>
+<li><img src="data1/images/1.jpg" alt="Low Cost Expense Management Software Solution" title="Low Cost Expense Management Software Solution" id="wows1_1"/></li>
+<li><img src="data1/images/2.jpg" alt="Expense Management With US based Support" title="Expense Management With US based Support" id="wows1_2"/></li>
+<li><img src="data1/images/3.jpg" alt="Expense Reporting With Client Focus" title="Expense Reporting With Client Focus" id="wows1_3"/></li>
+<li><img src="data1/images/5.jpg" alt="News Today Tomorrow" title="News Today Tomorrow" id="wows1_4"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="Highly Configurable Expense Report Software"><img src="data1/tooltips/9.jpg" alt="Highly Configurable Expense Report Software"/>1</a>
+<a href="#" title="Low Cost Expense Management Software Solution"><img src="data1/tooltips/10.jpg" alt="Low Cost Expense Management Software Solution"/>2</a>
+<a href="#" title="Expense Management With US based Support"><img src="data1/tooltips/11.jpg" alt="Expense Management With US based Support"/>3</a>
+<a href="#" title="Expense Reporting With Client Focus"><img src="data1/tooltips/13.jpg" alt="Expense Reporting With Client Focus"/>4</a>
+<a href="#" title="Online Business Management and Software Solution"><img src="data1/tooltips/14.jpg" alt="Online Business Management and Software Solution"/>5</a>
+</div></div>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End Slider BODY section -->
+	<div id="footer">
+		<p>Copyright (c) 2012 KMIT. All rights reserved. Design by <a href="">SSPK</a>.</p>
+	</div>
+
+</body>
+</html>
